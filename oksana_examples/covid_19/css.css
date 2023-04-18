@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 1440px;
+    margin: 0 auto;
+    font-family: "Exo 2", serif;
+}
+.nav__header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: #FFF8F8;
+}
+.logo__header {
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #035755;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu__header {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.link__header {
+    text-decoration: none;
+    color: #035755;
+}
+.link__header:hover {
+    color: #FB4C47;
+}
+.contact_link__header {
+    text-decoration: none;
+    color: #FB4C47;
+    border: 2px solid #FB4C47;
+    border-radius: 46px;
+    padding: 15px 40px 15px 40px;
+}
+.main {
+    height: 740px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    background: linear-gradient(to bottom, #FFF8F8, #FFFFFF);
+}
+.info__main {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /*padding-top: 150px;*/
+    /*padding-bottom: 150px;*/
+    padding-left: 130px;
+}
+.headline_2__main {
+    width: 510px;
+    color: #FB4C47;
+    margin-bottom: 12px;
+}
+.headline_1__main {
+    width: 510px;
+    color: #035755;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.text__main {
+    width: 510px;
+    color: #4B4F51;
+   font-size: 18px;
+    margin-bottom: 25px;
+}
+.button__main {
+    color: #FFF8F8;
+    font-size: 18px;
+    padding: 13px 46px 16px 46px;
+    background-color: #FB4C47;
+    border-radius: 65px;
+    text-decoration: none;
+}
+.img__main {
+    width: 60%;
+}
+.img__main img {
+    width: 100%;
+    height: auto;
+}
+.container_virus {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+.overlay_virus_img_1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -700px;
+    left: 560px;
+    z-index: 999;
+}
+.overlay_virus_img_2 {
+    width: 140%;
+    height: 140%;
+    position: absolute;
+    top: -600px;
+    left: 1410px;
+    z-index: 999;
+}
+.about {
+    display: flex;
+    height: 740px;
+    justify-content: space-between;
+    /*padding-top: 30px;*/
+
+}
