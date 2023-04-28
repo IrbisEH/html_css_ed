@@ -23,8 +23,6 @@ p {
     color: #4B4F51;
 }
 body {
-    /*width: 1440px;*/
-    /*margin: 0 auto;*/
     font-family: "Exo 2", serif;
     background: linear-gradient(to bottom, #FFF8F8, #FFFFFF);
 }
@@ -205,13 +203,10 @@ header {
 }
 .symptomps {
     height: 900px;
-    /*background-color: #4E3835;*/
-    /*    height: 990px;*/
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 .img_symptomps {
     width: 500px;
@@ -228,7 +223,6 @@ header {
     height: 400px;
     display: flex;
     flex-direction: row;
-    /*justify-content: center;*/
     align-items: center;
 }
 .info_with_points_block .section_left_side {
@@ -245,16 +239,9 @@ header {
     width: 550px;
     height: 235px;
     display: flex;
-    /*padding-right: 100px;*/
-    /*flex-direction: row;*/
-    /*align-items: center;*/
 }
 .info_with_points .point_block {
     width: 75px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: start;*/
-    /*align-items: start;*/
 }
 .point_wrapper {
     width: 75px;
@@ -294,7 +281,6 @@ header {
     width: 25%;
     height: 100%;
     display: flex;
-    /*flex-direction: row;*/
     align-items: center;
 }
 .report_card {
@@ -336,7 +322,6 @@ header {
     width: 90%;
     height: 65px;
     border-radius: 8px;
-    /*border: 1px solid #FB4C47;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -346,16 +331,12 @@ header {
     font-size: 20px;
     color: #FB4C47;
     transition: fill 0.4s ease;
-    /*padding-right: 30px;*/
-    /*padding-left: 10px;*/
 }
 .map_info_block h3 {
     font-weight: 700;
     font-size: 20px;
     color: #FB4C47;
     transition: fill 5s ease;
-    /*padding-right: 30px;*/
-    /*padding-left: 10px;*/
 }
 path{
     fill: #FB4C47;
@@ -410,7 +391,7 @@ path{
     z-index: 9999;
 }
 .form_section {
-    height: 500px;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -422,24 +403,104 @@ path{
     flex-direction: column;
     align-items: center;
 }
+#input_email {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
 
+.input-container {
+    position: relative;
+    width: 450px;
+    height: 65px;
+    display: flex;
+}
 
+#email {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 17px 50px #E5DDDD;
+    text-align: center;
+    font-size: 16px;
+    padding-right: 60px;
+    border: white;
+}
+#email[type="email"]::placeholder {
+    font-size: 16px;
+}
+#input_email button[type="submit"] {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    width: 20%;
+    height: 80%;
+    background-color: #FB4C47;
+    border: white;
+    border-radius: 20px;
+    color: white;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 35px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: none; /* По умолчанию скрыто */
+}
+.popup_wraper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#close_popup {
+    width: 85px;
+    height: 45px;
+    background-color: #FB4C47;
+    border: white;
+    border-radius: 20px;
+    color: white;
+}
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rights_footer {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
 
-
-
-/*!*.overlay_virus_img_1 {*!*/
-/*!*    width: 100%;*!*/
-/*!*    height: 100%;*!*/
-/*!*    position: absolute;*!*/
-/*!*    top: -700px;*!*/
-/*!*    left: 560px;*!*/
-/*!*    z-index: 999;*!*/
-/*!*}*!*/
-/*!*.overlay_virus_img_2 {*!*/
-/*!*    width: 140%;*!*/
-/*!*    height: 140%;*!*/
-/*!*    position: absolute;*!*/
-/*!*    top: -600px;*!*/
-/*!*    left: 1410px;*!*/
-/*!*    z-index: 999;*!*/
-/*!*}*!*/
+.overlay_virus_img_1 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 120px;
+    left: 830px;
+    z-index: 999;
+}
+.overlay_virus_img_2 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 180px;
+    left: 1550px;
+    z-index: 999;
+}

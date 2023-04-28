@@ -238,44 +238,48 @@
                 <h3>Have Question in mind?</h3>
                 <h3>Let us help you</h3>
             </div>
-            <form action="" class="form__contact">
-                <label for="email"></label>
-                <input id="email" type="email" placeholder="snmonydemo@gmail.com">
-                <input type="submit" class="submit" value="send">
+            <form id="input_email">
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    <button type="submit">Send</button>
+                </div>
+                <span id="emailValidationMessage" style="display: none; color: red;">Incorrect email</span>
             </form>
-        </section>
-        <footer>
-            <div class="text__footer">
-                © COPYRIGHT 2021
+            <div class="popup" id="myPopup">
+                <div class="popup_wraper">
+                    <h2>Success!</h2>
+                    <button id="close_popup">Close</button>
+                </div>
             </div>
 
+        </section>
+        <footer>
+            <div class="nav_footer">
+                <a class="logo" href="#">
+                    <div class="img_header">
+                        <img alt="covid" src="./media/covid_logo.png">
+                    </div>
+                    <p>covid-19</p>
+                </a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a class="menu_link" href="#">Overview</a></li>
+                        <li><a class="menu_link" href="#">Contagion</a></li>
+                        <li><a class="menu_link" href="#">Symptoms</a></li>
+                        <li><a class="menu_link" href="#">Prevention</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="rights_footer">
+                2020 © All rights reserved by pixelspark.co
+            </div>
         </footer>
-
-
-
-
-
-
-
-
-
-
-        <!--            <div class="point_headline">-->
-<!--                <h3>Wear Masks</h3>-->
-<!--            </div>-->
-<!--            <div class="point-text">-->
-<!--                <p>Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively</p>-->
-<!--            </div>-->
-<!--            <div class="point_img">-->
-<!--                <img alt="point_block_img_1.png" src="./media/point_block_img_1.png">-->
-<!--            </div>-->
-
-<!--    <div class="container_virus">-->
-<!--        <img class="overlay_virus_img_1" alt="virus" src="./media/virus_1.png">-->
-<!--    </div>-->
-<!--    <div class="container_virus">-->
-<!--        <img class="overlay_virus_img_2" alt="virus" src="./media/virus_1.png">-->
-<!--    </div>-->
+    <div class="container_virus">
+        <img class="overlay_virus_img_1" alt="virus" src="./media/virus_1.png">
+    </div>
+    <div class="container_virus">
+        <img class="overlay_virus_img_2" alt="virus" src="./media/virus_1.png">
+    </div>
     </div>
 </body>
 </html>

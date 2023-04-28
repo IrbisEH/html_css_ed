@@ -1,4 +1,3 @@
-
 const partsOfWorld = [
     "north_america",
     "south_america",
@@ -65,49 +64,48 @@ window.addEventListener('load', function() {
                 item.style.fill = "#FB4C47";
             }
         })
-
     })
+
+    document.querySelector('form').addEventListener('submit', submitForm);
+
+    document.getElementById("close_popup").addEventListener("click", function() {
+        var popupMessage = document.getElementById("myPopup");
+        closePopup(popupMessage);
+    });
+
+    function submitForm(event) {
+        event.preventDefault();
+
+        var form = document.getElementById("input_email");
+        var email = document.getElementById("email");
+        var emailValidationMessage = document.getElementById("emailValidationMessage");
+        var popupMessage = document.getElementById("myPopup");
+
+        if (form.checkValidity() === false) {
+            emailValidationMessage.style.display = "inline-block";
+        } else {
+            emailValidationMessage.style.display = "none";
+            openPopup(popupMessage);
+        }
+    }
+
+    function openPopup(Obj) {
+        Obj.style.display = "block";
+    }
+
+    function closePopup(Obj) {
+        Obj.style.display = "none";
+    }
+
+    const virusImg1 = document.querySelector('.overlay_virus_img_1');
+    const virusImg2 = document.querySelector('.overlay_virus_img_2');
+
+    window.addEventListener('scroll', () => {
+        virusImg1.style.transform = `translate(${Math.random()*4-2}px, ${Math.random()*4-2}px)`;
+        virusImg2.style.transform = `translate(${Math.random()*4-2}px, ${Math.random()*4-2}px)`;
+    });
+
 });
-        // mapElements[key].svg_paths.addEventListener("mouseover", function() {
-        //     mapElements[key].block_id.style.backgroundColor = "#F44A45"
-        // })
-        // mapElements[key].svg_paths.addEventListener("mouseout", function() {
-        //     mapElements[key].block_id.style.backgroundColor = "#167C51"
-        // })
-    // })
 
 
-
-
-
-//     const imgs = document.querySelectorAll('.container_virus');
-//     let isVibrating = false;
-//
-//     window.addEventListener('scroll', () => {
-//         if (!isVibrating) {
-//             isVibrating = true;
-//
-//             for (let img of imgs) {
-//                 let vibrationIntensity = Math.random() * 10;
-//                 const originalPosition = img.getBoundingClientRect().top;
-//
-//                 const shakeImage = () => {
-//                     if (vibrationIntensity > 0) {
-//                         img.style.transform = `translate(${vibrationIntensity * (Math.random() - 0.3)}px, ${vibrationIntensity * (Math.random() - 0.3)}px)`;
-//                         vibrationIntensity -= 1;
-//                         requestAnimationFrame(shakeImage);
-//                     } else {
-//                         img.style.transform = 'none';
-//                         isVibrating = false;
-//                     }
-//                 };
-//
-//                 shakeImage();
-//
-//                 if (window.pageYOffset > originalPosition) {
-//                     requestAnimationFrame(shakeImage);
-//                 }
-//             }
-//         }
-//     });
 
