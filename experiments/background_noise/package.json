@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "name": "Noise",
+  "dependencies": {
+    "your-dependencies": "^1.0.0"
+  }
+}
